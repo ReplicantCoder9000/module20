@@ -114,3 +114,8 @@ This workflow runs when code is pushed to the main branch. It:
 4. Run Cypress tests in GUI mode:
    ```bash
    npm run test-gui
+   ```
+
+## Testing the CI/CD Pipeline
+
+This note was added to test the CI/CD pipeline. When this change is pushed to a feature branch and a Pull Request is created to the develop branch, GitHub Actions should automatically run the Cypress component tests. When the PR is merged to develop and then to main, the application should be automatically deployed to Render.
